@@ -26,7 +26,7 @@
 #import "VTDAppDependencies.h"
 
 @interface VTDAppDelegate ()
-
+//App的依赖对象
 @property (nonatomic, strong) VTDAppDependencies *dependencies;
 
 @end
@@ -35,9 +35,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //实例化依赖对象
     VTDAppDependencies *dependencies = [[VTDAppDependencies alloc] init];
     self.dependencies = dependencies;
-    
+    //装载根视图控制器
     [self.dependencies installRootViewControllerIntoWindow:self.window];
     
     return YES;

@@ -25,6 +25,7 @@
 
 @interface VTDAppDependencies : NSObject
 
+//装载主window的根视图控制器
 - (void)installRootViewControllerIntoWindow:(UIWindow *)window;
 
 @end

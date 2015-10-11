@@ -30,7 +30,7 @@
 
 @interface VTDListInteractor : NSObject <VTDListInteractorInput>
 
-@property (nonatomic, weak)     id<VTDListInteractorOutput> output;
+@property (nonatomic, weak)id<VTDListInteractorOutput> output;
 
 - (instancetype)initWithDataManager:(VTDListDataManager *)dataManager clock:(id<VTDClock>)clock;
 
